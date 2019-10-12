@@ -7,7 +7,8 @@ import org.junit.jupiter.api.Test;
 class junit1 {
 
 	@Test
-	void test() {
+	void testbasic_case() {
+		assertEquals("Test LCA", findlca(4,5), 2);
 		fail("Not yet implemented");
 	}
 
