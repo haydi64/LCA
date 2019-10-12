@@ -11,5 +11,10 @@ class junit1 {
 		assertEquals("Test LCA", findlca(4,5), 2);
 		fail("Not yet implemented");
 	}
+	
+	void testsamebranch() {
+		assertEquals("Test same branch LCA", findlca(2,4), 2);
+		fail("Should result in 2");
+	}
 
 }
