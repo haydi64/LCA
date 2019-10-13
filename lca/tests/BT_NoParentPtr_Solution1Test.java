@@ -73,8 +73,18 @@ public class BT_NoParentPtr_Solution1Test {
         tree.root.right.right.right.right.right.right.right.right.right.right = new Node(11);
         tree.root.right.right.right.right.right.right.right.right.right.right.right = new Node(12);
         Assert.assertEquals(3,tree.findLCA(3,12));
-
     }
 
+    @Test
+    public void testIncorrectTreeCreation() {
+        BT_NoParentPtr_Solution1 tree = new BT_NoParentPtr_Solution1();
+        tree.root = new Node(1);
+        tree.root.right = new Node(2);
+        tree.root.left = new Node(3);
+        tree.root.right.left = new Node(4);
+        tree.root.left.right = new Node(5);
+        tree.root.left.left.left.right = new Node(6);
+        Assert.assertEquals(-1,tree.findLCA(5,6));
+    }
 
 }
