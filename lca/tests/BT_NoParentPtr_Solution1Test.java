@@ -114,4 +114,10 @@ public class BT_NoParentPtr_Solution1Test {
         Assert.assertEquals(-1,tree.findLCA(3,9));
 
     }
+
+    @Test
+    public void testNoTree() {
+        BT_NoParentPtr_Solution1 tree = new BT_NoParentPtr_Solution1();
+        Assert.assertEquals(-1, tree.findLCA(5,6));
+    }
 }
