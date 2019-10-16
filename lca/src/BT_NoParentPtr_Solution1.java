@@ -22,6 +22,11 @@ public class BT_NoParentPtr_Solution1 {
 				return -1;
 			}
 
+			if(findPath(root, n1, path1) == findPath(root, n2, path2)) {
+			    System.out.println("Two nodes have the same value");
+			    return -1;
+            }
+
 			int i;
 			for (i = 0; i < path1.size() && i < path2.size(); i++) {
 
