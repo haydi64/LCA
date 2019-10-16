@@ -97,7 +97,7 @@ public class BT_NoParentPtr_Solution1Test {
         tree.root.right.right = new Node(6);
         tree.root.left.right = new Node(5);
         tree.root.left.left = new Node(6);
-        Assert.assertEquals(1,tree.findLCA(6,6));
+        Assert.assertEquals(-1,tree.findLCA(6,6));
 
     }
 

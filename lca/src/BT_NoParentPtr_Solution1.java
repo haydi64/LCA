@@ -9,6 +9,10 @@ public class BT_NoParentPtr_Solution1 {
 
 		// Finds the path from root node to given root of the tree.
 		int findLCA(int n1, int n2) {
+			if(n1 == n2) {
+				System.out.println("Two nodes have identical values");
+				return -1;
+			}
 			path1.clear();
 			path2.clear();
 			return findLCAInternal(root, n1, n2);
